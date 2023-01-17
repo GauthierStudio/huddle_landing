@@ -1,0 +1,89 @@
+/* - Mobile: 375px - Desktop: 1440px */
+
+:root {
+    /* Colours */
+    --primary-color: hsl(322, 100%, 66%);
+    --verypale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayishblue: hsl(208, 11%, 55%);
+    /* Fonts */
+    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    --heading-weight: 600;
+    --body--light-weight: 400;
+    --body--bold-weight: 700;
+    font-size: 16px;
+}
+
+
+body {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    font-weight: var(--heading-weight);
+}
+
+a {
+    font-family: var(--font-body);
+    text-decoration: none;
+    color: white;
+}
+
+.inner-wrapper {
+    max-width: 92vw;
+    margin: 0 auto;
+}
+
+header {
+    background: url(/images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+
+nav {
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 140px;
+}
+
+
+nav a {
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.237);
+    padding: .50rem 2em;
+    border-radius: 20px;
+    font-size: .80em;
+    font-weight: var(--body--bold-weight);
+
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.hero a {
+    background-color: var(--primary-color);
+    padding: .60em 3em;
+    border-radius: 40px;
+    font-weight: var(--body--bold-weight);
+}
